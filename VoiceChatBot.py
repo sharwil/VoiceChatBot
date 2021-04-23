@@ -24,8 +24,8 @@ for voice in voices:
 engine.setProperty('voice',
                    'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0')
 
-for files in os.listdir(r'C:\Users\sharwil\Downloads\Prerequisite\chatterbot-corpus-master\chatterbot_corpus\data\english'):
-    data= open('C:/Users/sharwil/Downloads/Prerequisite/chatterbot-corpus-master/chatterbot_corpus/data/english/'+ files, 'r').readlines()
+for files in os.listdir(''):    #add data file path
+    data= open(''+ files, 'r').readlines()    #add data file path
     bot.train(data)
 
 while True:
