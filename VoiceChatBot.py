@@ -26,7 +26,7 @@ engine.setProperty('voice',
 
 for files in os.listdir(r'C:\Users\sharwil\Downloads\Prerequisite\chatterbot-corpus-master\chatterbot_corpus\data\english'):
     data= open('C:/Users/sharwil/Downloads/Prerequisite/chatterbot-corpus-master/chatterbot_corpus/data/english/'+ files, 'r').readlines()
-    #bot.train(data)
+    bot.train(data)
 
 while True:
     with sr.Microphone() as source:
